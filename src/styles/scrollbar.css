@@ -1,0 +1,18 @@
+/* Estilos para el scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Ajusta el ancho del scrollbar según tus necesidades */
+  }
+  
+ ::-webkit-scrollbar-track {
+    background-color: #dddddd; /* Cambia este color al gris más claro deseado */
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Cambia este color al gris deseado */
+    border-radius: 5px; /* Ajusta el valor de la esquina redondeada según tus necesidades */
+  }
+
+    
+::-webkit-scrollbar-button {
+  display: none;
+}
