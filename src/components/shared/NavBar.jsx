@@ -13,7 +13,7 @@ const NavBar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center">
           <img
-            src="/public/Logo.png"
+            src="/Logo.png"
             className="h-12 mr-3"
             alt="PixelBoost Logo"
           />
