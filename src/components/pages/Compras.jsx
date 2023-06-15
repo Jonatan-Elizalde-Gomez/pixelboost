@@ -89,58 +89,60 @@ function Compras() {
             </div>
 
             <div className="flex flex-col xl:flex-row justify-center xl:justify-between space-y-6 xl:space-y-0 xl:space-x-6 w-full">
-              <div className="xl:w-3/5 flex flex-col sm:flex-row xl:flex-col justify-center items-center bg-gray-100 py-7 sm:py-0 xl:py-10 px-10 xl:w-full">
-                <div className="flex flex-col justify-start items-start w-full space-y-4">
-                  <p className="text-xl md:text-2xl leading-normal text-gray-800">
-                    {paquete[currentPackage].plan}
-                  </p>
-                  <p className="text-base font-semibold leading-none text-gray-600">
-                    ${paquete[currentPackage].costo}
-                  </p>
-                </div>
-                <div className="w-1/3 h-auto rounded-lg">
-                  <div className="flex items-center">
-                    <div className="rounded-full bg-gray-300 w-10 h-10 flex justify-center items-center">
-                      <button
-                        onClick={() => setCurrentPackage(currentPackage - 1)}
-                        disabled={currentPackage === 0}
-                        className={`${
-                          currentPackage === 0
-                            ? "text-gray-400 cursor-not-allowed px-5"
-                            : "px-5"
-                        }`}
-                      >
-                        &lt;
-                      </button>
-                    </div>
-                    <img
-                      src={paquete[currentPackage].imagen}
-                      alt="paquete"
-                      className="mx-10 h-auto rounded-lg "
-                      style={{
-                        boxShadow: "0px 0px 20px 10px rgba(0, 0, 0, 0.2)",
-                      }}
-                    />
-                    <div className="rounded-full bg-gray-300 w-10 h-10 flex justify-center items-center">
-                      <button
-                        onClick={() => setCurrentPackage(currentPackage + 1)}
-                        disabled={currentPackage === paquete.length - 1}
-                        className={`${
-                          currentPackage === paquete.length - 1
-                            ? "text-gray-400 cursor-not-allowed px-5"
-                            : "px-5"
-                        }`}
-                      >
-                        &gt;
-                      </button>
-                    </div>
-                  </div>
-                </div>
+            <div className="xl:w-3/5 flex flex-col sm:flex-row xl:flex-col justify-center items-center bg-gray-100 py-7 sm:py-0 xl:py-10 px-10 xl:w-full">
+  <div className="flex flex-col justify-start items-start w-full space-y-4 ">
+    <p className="text-xl md:text-2xl leading-normal text-gray-800">
+      {paquete[currentPackage].plan}
+    </p>
+    <p className="text-base font-semibold leading-none text-gray-600">
+      ${paquete[currentPackage].costo}
+    </p>
+    <div className="w-1/3 h-auto rounded-lg  sm:ml-0 md:ml-20 lg:ml-20 xl:ml-20 md:pb-10 sm:pb-10">
+    <div className="flex items-center ">
+      <div className="rounded-full bg-gray-300 w-10 h-10 flex justify-center items-center ">
+        <button
+          onClick={() => setCurrentPackage(currentPackage - 1)}
+          disabled={currentPackage === 0}
+          className={`${
+            currentPackage === 0
+              ? "text-gray-400 cursor-not-allowed px-5"
+              : "px-5"
+          }`}
+        >
+          &lt;
+        </button>
+      </div>
+      <img
+        src={paquete[currentPackage].imagen}
+        alt="paquete"
+        className="mx-10 h-auto rounded-lg "
+        style={{
+          boxShadow: "0px 0px 20px 10px rgba(0, 0, 0, 0.2)",
+        }}
+      />
+      <div className="rounded-full bg-gray-300 w-10 h-10 flex justify-center items-center">
+        <button
+          onClick={() => setCurrentPackage(currentPackage + 1)}
+          disabled={currentPackage === paquete.length - 1}
+          className={`${
+            currentPackage === paquete.length - 1
+              ? "text-gray-400 cursor-not-allowed px-5"
+              : "px-5"
+          }`}
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
 
-                <div className="flex justify-between">
-                  <div className="flex justify-start items-center space-x-4"></div>
-                </div>
-              </div>
+
+  <div className="flex justify-between">
+    <div className="flex justify-start items-center space-x-4"></div>
+  </div>
+</div>;
+
 
               <div className="p-8 bg-gray-100 flex flex-col lg:w-full xl:w-3/5">
                 <div className="flex flex-row justify-center items-center mt-6">
