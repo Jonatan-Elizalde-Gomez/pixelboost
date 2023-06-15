@@ -78,7 +78,7 @@ const Chatbot = () => {
           <div className="flex">
             <input
               type="text"
-              className="border border-gray-300 rounded-l-lg p-2 flex-1"
+              className="border border-gray-300 rounded-l-lg p-2 flex-1 max-w-full"
               value={inputValue}
               onChange={handleInputChange}
             />
