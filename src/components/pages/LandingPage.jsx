@@ -37,33 +37,34 @@ function LandingPage() {
           </button>
         </Link>
       </div>
-      <div className="flex justify-center mt-10 sm:mt-20 lg:mt-32 gap-5 sm:gap-10 pb-20">
-        <img
-          src="https://companieslogo.com/img/orig/U_BIG-1ad04207.png"
-          alt="Imagen 1"
-          className="h-8 sm:h-10 lg:h-12 mx-2"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/4/46/Logo_BMC_Software.png"
-          alt="Imagen 2"
-          className="h-8 sm:h-10 lg:h-12 mx-2"
-        />
-        <img
-          src="https://logos-download.com/wp-content/uploads/2021/01/Coupa_Logo.png"
-          alt="Imagen 3"
-          className="h-8 sm:h-10 lg:h-12 mx-2"
-        />
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png"
-          alt="Imagen 4"
-          className="h-8 sm:h-10 lg:h-12 mx-2"
-        />
-        <img
-          src="https://myleanacademy.com/wp-content/uploads/2020/01/logo-ibm-png-ibm-logo-png-4464.png"
-          alt="Imagen 5"
-          className="h-8 sm:h-10 lg:h-12 mx-2"
-        />
-      </div>
+      <div className="flex flex-wrap justify-center mt-10 sm:mt-20 lg:mt-32 gap-5 sm:gap-10 pb-20">
+  <img
+    src="https://companieslogo.com/img/orig/U_BIG-1ad04207.png"
+    alt="Imagen 1"
+    className="h-8 sm:h-10 lg:h-12 w-auto mx-2"
+  />
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/4/46/Logo_BMC_Software.png"
+    alt="Imagen 2"
+    className="h-8 sm:h-10 lg:h-12 w-auto mx-2"
+  />
+  <img
+    src="https://logos-download.com/wp-content/uploads/2021/01/Coupa_Logo.png"
+    alt="Imagen 3"
+    className="h-8 sm:h-10 lg:h-12 w-auto mx-2"
+  />
+  <img
+    src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png"
+    alt="Imagen 4"
+    className="h-8 sm:h-10 lg:h-12 w-auto mx-2"
+  />
+  <img
+    src="https://myleanacademy.com/wp-content/uploads/2020/01/logo-ibm-png-ibm-logo-png-4464.png"
+    alt="Imagen 5"
+    className="h-8 sm:h-10 lg:h-12 w-auto mx-2"
+  />
+</div>
+
       <section className="bg-[#f0f2f5] pt-10 sm:pt-20 lg:pt-32 pb-10 sm:pb-20 lg:pb-32">
         <div className="text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
