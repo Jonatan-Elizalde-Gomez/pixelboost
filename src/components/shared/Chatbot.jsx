@@ -65,14 +65,15 @@ const Chatbot = () => {
     <div className="fixed bottom-4 right-4">
       {!isChatOpen && (
         <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-12 h-12 flex items-center justify-center border border-blue-500"
-          onClick={handleToggleChat}
-        >
-          +
-        </button>
+  className="text-4xl	 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-16 h-16 flex items-center justify-center border border-blue-500"
+  onClick={handleToggleChat}
+>
+  <span className="flex items-center justify-center mb-1 ">+</span>
+</button>
+
       )}
       {isChatOpen && (
-        <div className="bg-white border border-gray-300 rounded-lg p-4 mt-4 w-80 shadow">
+        <div className="bg-white border border-gray-300 rounded-lg p-4 mt-4 w-90 shadow">
           <button
             className="absolute top-5 right-2 text-gray-500 hover:text-gray-700"
             onClick={handleToggleChat}
