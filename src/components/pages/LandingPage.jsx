@@ -3,12 +3,13 @@ import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
+import Chatbot from "../shared/Chatbot";
 
 function LandingPage() {
   return (
     <>
       <NavBar></NavBar>
-
+      <Chatbot />
       <div className="flex flex-col items-center mt-10 sm:mt-20 lg:mt-40">
         <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-700 mb-2 order-3">
           <Typical
