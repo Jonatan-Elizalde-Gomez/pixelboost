@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Chatbot = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const inputRef = useRef(null);
 
   const handleToggleChat = () => {
     setIsChatOpen(!isChatOpen);
@@ -20,6 +21,12 @@ const Chatbot = () => {
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSendMessage();
+    }
   };
 
   useEffect(() => {
@@ -47,6 +54,12 @@ const Chatbot = () => {
       clearTimeout(typingTimeout);
     };
   }, [isTyping]);
+
+  useEffect(() => {
+    if (isChatOpen) {
+      inputRef.current.focus();
+    }
+  }, [isChatOpen]);
 
   return (
     <div className="fixed bottom-4 right-4">
@@ -81,6 +94,8 @@ const Chatbot = () => {
               className="border border-gray-300 rounded-l-lg p-2 flex-1 max-w-full"
               value={inputValue}
               onChange={handleInputChange}
+              onKeyPress={handleKeyPress}
+              ref={inputRef}
             />
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-r-lg px-4 py-2 border border-blue-500"
