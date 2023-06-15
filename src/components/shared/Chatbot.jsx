@@ -71,7 +71,7 @@ const Chatbot = () => {
         </button>
       )}
       {isChatOpen && (
-        <div className="bg-white border border-gray-300 rounded-lg p-4 mt-4 w-80 h-96 shadow">
+        <div className="bg-white border border-gray-300 rounded-lg p-4 mt-4 w-96 h-96 shadow">
           <button
             className="absolute top-5 right-2 text-gray-500 hover:text-gray-700"
             onClick={handleToggleChat}
