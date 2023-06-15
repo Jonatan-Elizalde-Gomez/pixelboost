@@ -1,0 +1,9 @@
+.rounded-container {
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

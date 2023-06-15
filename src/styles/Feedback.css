@@ -1,0 +1,22 @@
+.slider {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    display: flex;
+    width: fit-content;
+    animation: sliderAnimation 10s linear infinite;
+  }
+
+  
+  @keyframes sliderAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 3)); /* Ajusta el valor "-300px * 3" según el número de elementos de slide */
+    }
+  }
+  
