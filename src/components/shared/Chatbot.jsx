@@ -61,7 +61,7 @@ const Chatbot = () => {
   }, [isChatOpen]);
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-4 right-4" style={{ zIndex: 1 }}>
       {!isChatOpen && (
         <button
           className="text-4xl bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full w-16 h-16 flex items-center justify-center border border-blue-500"
