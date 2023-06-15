@@ -5,9 +5,9 @@ const Footer = () => {
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="" class="flex items-center">
+            <a href="/" class="flex items-center">
               <img
-                src="../../src/assets/Logo.png"
+                src="../../public/Logo.png"
                 class="h-8 mr-3"
                 alt="FlowBite Logo"
               />
@@ -39,20 +39,36 @@ const Footer = () => {
                 Siguenos
               </h2>
               <ul class="text-gray-600 dark:text-gray-400 font-medium">
-                <li class="mb-4">
+              <li>
                   <a
-                    href=""
-                    class="hover:underline "
+                    href="https://www.facebook.com/profile.php?id=100093577273637"
+                    class="hover:underline"
                   >
                     Facebook
                   </a>
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="https://www.instagram.com/pixelboost.ti/"
                     class="hover:underline"
                   >
                     Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/boost_pixel"
+                    class="hover:underline"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/pixel-boost-25927527b/"
+                    class="hover:underline"
+                  >
+                    Linkedin
                   </a>
                 </li>
               </ul>

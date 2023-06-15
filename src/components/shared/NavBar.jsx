@@ -6,7 +6,7 @@ const NavBar = () => {
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" class="flex items-center">
           <img
-            src="../../src/assets/Logo.png"
+            src="../../public/Logo.png"
             class="h-8 mr-3"
             alt="PixelBoost Logo"
           />
