@@ -11,29 +11,29 @@ function LandingPage() {
     <>
       <NavBar></NavBar>
       <Chatbot />
-      <div className="flex flex-col items-center mt-56">
-        <div className="text-6xl  font-bold text-blue-700 mb-2 order-3">
+      <div className="flex flex-col items-center mt-10 sm:mt-20 lg:mt-40">
+        <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-blue-700 mb-2 order-3">
           <Typical
             steps={["", 1000, "conexiones.", 2000, "", 1000]}
             loop={Infinity}
             wrapper="p"
           />{" "}
         </div>
-        <div className="text-6xl font-bold mr-2 mb-2 order-2">
+        <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mr-2 mb-2 order-2">
           Nosotros creamos
         </div>
       </div>
 
-      <p className="text-center text-3xl mt-20">
+      <p className="text-center text-xl mt-5 sm:mt-10 lg:mt-20">
         En PixelBoost, nos especializamos en impulsar la visibilidad en el
         ámbito digital de empresas pequeñas y medianas
       </p>
-      <p className="text-center text-3xl">
+      <p className="text-center text-xl">
         ¡Descubre nuestro increíble trabajo!
       </p>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-5 sm:mt-10 lg:mt-20">
         <Link to="/contactanos" className="transition-colors">
-          <button className="rounded-full border border-blue-500  text-blue-500 hover:bg-blue-500 hover:text-white mt-16 py-8 px-24 text-2xl">
+          <button className="rounded-full border border-blue-500 py-3 px-10 sm:py-4 sm:px-12 lg:py-5 lg:px-16 text-blue-500 hover:bg-blue-500 hover:text-white mt-5 sm:mt-10 lg:mt-16">
             Contáctanos
           </button>
         </Link>
@@ -80,7 +80,7 @@ function LandingPage() {
             Nuestro objetivo es brindarte soluciones integrales que te ayuden a
             alcanzar el éxito.
           </p>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-wrap gap-20 justify-center items-center">
             <Link
               to="/compra?numero=1"
               className="flex justify-center items-center"
@@ -88,18 +88,18 @@ function LandingPage() {
               <img
                 src="/servicio1.jpeg"
                 alt="Servicio 1"
-                className="w-1/2 h-auto rounded-lg cursor-pointer"
+                className="w-auto h-96 rounded-lg cursor-pointer"
                 style={{ boxShadow: "0px 0px 20px 10px rgba(0, 0, 0, 0.2)" }}
               />
             </Link>
             <Link
               to="/compra?numero=2"
-              className="flex justify-center items-center"
+              className="flex justify-center items-center "
             >
               <img
                 src="/servicio2.jpeg"
                 alt="Servicio 2"
-                className="w-1/2 h-auto rounded-lg cursor-pointer"
+                className="w-auto h-96 rounded-lg cursor-pointer"
                 style={{ boxShadow: "0px 0px 20px 10px rgba(0, 0, 0, 0.2)" }}
               />
             </Link>
@@ -110,7 +110,7 @@ function LandingPage() {
               <img
                 src="/servicio3.jpeg"
                 alt="Servicio 3"
-                className="w-1/2 h-auto rounded-lg cursor-pointer"
+                className="w-auto h-96 rounded-lg cursor-pointer"
                 style={{ boxShadow: "0px 0px 20px 10px rgba(0, 0, 0, 0.2)" }}
               />
             </Link>
@@ -125,40 +125,44 @@ function LandingPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-20">
             tenemos todo cubierto.
           </h1>
-          <div className="flex flex-col sm:flex-row text-center sm:text-left">
-            <div className="w-full sm:w-1/2 pl-5 sm:pl-10 pr-5 sm:pr-10">
-              <p className="text-blue-500 text-2xl font-bold">01.</p>
-              <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
-                Aumenta tu visibilidad en línea con la optimización de motores
-                de búsqueda (SEO).
-              </p>
-              <p className="text-blue-500 text-2xl font-bold">02.</p>
-              <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
-                Atrae a tu audiencia objetivo con estrategias de marketing de
-                contenidos.
-              </p>
-              <p className="text-blue-500 text-2xl font-bold">03.</p>
-              <p className="text-2xl sm:text-2xl">
-                Conecta con más clientes potenciales a través de la gestión de
-                redes sociales.
-              </p>
+          <div className="flex flex-col-reverse sm:flex-row text-center sm:text-left">
+          <div className="w-full sm:w-1/3 mx-auto pl-5 sm:pl-10 pr-5 sm:pr-10">
+              <div className="w-full">
+                <p className="text-blue-500 text-2xl font-bold">01.</p>
+                <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
+                  Aumenta tu visibilidad en línea con la optimización de motores
+                  de búsqueda (SEO).
+                </p>
+                <p className="text-blue-500 text-2xl font-bold">02.</p>
+                <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
+                  Atrae a tu audiencia objetivo con estrategias de marketing de
+                  contenidos.
+                </p>
+                <p className="text-blue-500 text-2xl font-bold">03.</p>
+                <p className="text-2xl sm:text-2xl">
+                  Conecta con más clientes potenciales a través de la gestión de
+                  redes sociales.
+                </p>
+              </div>
             </div>
-            <div className="w-full sm:w-1/2 pr-5 sm:pr-10 pl-5 sm:pl-10 mt-5 sm:mt-0">
-              <p className="text-blue-500 text-2xl font-bold">04.</p>
-              <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
-                Llega a tu público de manera rápida y rentable con publicidad en
-                línea (PPC).
-              </p>
-              <p className="text-blue-500 text-2xl font-bold">05.</p>
-              <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
-                Crea sitios web atractivos y funcionales que se adaptan a todos
-                los dispositivos.
-              </p>
-              <p className="text-blue-500 text-2xl font-bold">06.</p>
-              <p className="text-2xl sm:text-2xl">
-                Evalúa el rendimiento y mejora tus estrategias con análisis de
-                datos.
-              </p>
+            <div className="w-full sm:w-1/3 mx-auto pl-5 sm:pl-10 pr-5 sm:pr-10">
+              <div className="w-full  ">
+                <p className="text-blue-500 text-2xl font-bold">04.</p>
+                <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
+                  Llega a tu público de manera rápida y rentable con publicidad
+                  en línea (PPC).
+                </p>
+                <p className="text-blue-500 text-2xl font-bold">05.</p>
+                <p className="text-2xl sm:text-2xl mb-5 sm:mb-10">
+                  Crea sitios web atractivos y funcionales que se adaptan a
+                  todos los dispositivos.
+                </p>
+                <p className="text-blue-500 text-2xl font-bold">06.</p>
+                <p className="text-2xl sm:text-2xl">
+                  Evalúa el rendimiento y mejora tus estrategias con análisis de
+                  datos.
+                </p>
+              </div>
             </div>
           </div>
         </div>
